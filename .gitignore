@@ -1,0 +1,52 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Visual Studio files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code files
+.vscode/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPS/
+[Rr]elease/
+[Rr]eleasePS/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio Profiler
+*.vsp
+*.vspx
+*.sap
+
+# Visual Studio Code Workspace
+*.code-workspace
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored if you are using NuGet restore
+[Pp]ackages/
+# except build-only packages
+![Pp]ackages/build/
+# Uncomment if necessary:
+# ![Pp]ackages/repositories.config
+
+# ASP.NET LocalServer
+.vs/
