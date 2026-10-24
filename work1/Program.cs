@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 
 class Restaurant
 {
+    public uint id = 0;
     public string name = "";
     public string category = "";
     public float rate = 0;
 
-    public Restaurant(string name, string category, float rate)
+    public Restaurant(uint id, string name, string category, float rate)
     {
+        this.id = id;
         this.name = name;
         this.category = category;
         this.rate = rate;
@@ -26,12 +28,24 @@ namespace work1
     {
         static void Main(string[] args)
         {
-            List<Restaurant> restaurants = new List<Restaurant>({
-                new Restaurant("Quanjude Roast Duck", "Beijing Cuisine", 4.5f),
-                new Restaurant("Donglaishun Hot Pot", "Hot Pot", 4.6f),
-                new Restaurant("Din Tai Fung", "Taiwanese Cuisine", 4.7f)
+            List<Restaurant> restaurants = new List<Restaurant>
+            {
+                new Restaurant(1, "Quanjude Roast Duck", "Beijing Cuisine", 4.5f),
+                new Restaurant(2, "Donglaishun Hot Pot", "Hot Pot", 4.6f),
+                new Restaurant(3, "Din Tai Fung", "Taiwanese Cuisine", 4.7f),
+                new Restaurant(4, "Huguosi Snacks", "Snacks", 4.2f),
+                new Restaurant(5, "Haidilao Hot Pot", "Hot Pot", 4.8f)
+            };
 
-            });
+
+            foreach (var restaurant in restaurants)
+            {
+                Console.WriteLine($"ID: {restaurant.id}");
+                Console.WriteLine($"Name: {restaurant.name}");
+                Console.WriteLine($"Category: {restaurant.category}");
+                Console.WriteLine($"Rate: {restaurant.rate}");
+                Console.Write("\n");
+            }
         }
     }
 }
