@@ -40,7 +40,7 @@ namespace work1
 
             foreach (var restaurant in restaurants)
             {
-                Console.WriteLine($"{restaurant.name} in categoty '{restaurant.category}' and has rating is {restaurant.rate}.")
+                Console.WriteLine($"{restaurant.name} in categoty '{restaurant.category}' and has rating is {restaurant.rate}.");
             }
         }
     }
